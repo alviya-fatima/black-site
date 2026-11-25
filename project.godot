@@ -1,0 +1,49 @@
+; Engine configuration file.
+; BLACK SITE - original psychological horror game.
+config_version=5
+
+[application]
+
+config/name="BLACK SITE"
+config/description="You don't escape Black Site. You bounce back."
+run/main_scene="res://scenes/main_menu.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0.027, 0.031, 0.027, 1)
+boot_splash/show_image=false
+
+[audio]
+
+driver/enable_input=false
+
+[autoload]
+
+GameState="*res://scripts/autoload/game_state.gd"
+InventoryManager="*res://scripts/autoload/inventory_manager.gd"
+SaveManager="*res://scripts/autoload/save_manager.gd"
+AudioManager="*res://scripts/autoload/audio_manager.gd"
+SceneTransition="*res://scripts/autoload/scene_transition.gd"
+UI="*res://scripts/autoload/ui_factory.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+window/handheld/orientation=1
+
+[physics]
+
+common/physics_ticks_per_second=60
+common/max_physics_steps_per_frame=8
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.023, 0.027, 0.023, 1)
+anti_aliasing/quality/msaa_3d=2
+textures/default_filters/use_nearest_mipmap_filter=false
