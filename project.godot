@@ -15,6 +15,7 @@ boot_splash/show_image=false
 [audio]
 
 driver/enable_input=false
+buses/default_bus_layout="res://default_bus_layout.tres"
 
 [autoload]
 

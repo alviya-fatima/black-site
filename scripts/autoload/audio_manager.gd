@@ -55,6 +55,7 @@ func _exit_tree() -> void:
 
 
 func _ensure_buses() -> void:
+	var is_web := OS.has_feature("web")
 	for bus_name in ["Music", "SFX"]:
 		var index := AudioServer.get_bus_index(bus_name)
 		if index == -1:
@@ -62,6 +63,8 @@ func _ensure_buses() -> void:
 			index = AudioServer.bus_count - 1
 			AudioServer.set_bus_name(index, bus_name)
 			AudioServer.set_bus_send(index, "Master")
+		if is_web:
+			continue
 		if bus_name == "Music" and AudioServer.get_bus_effect_count(index) == 0:
 			var reverb := AudioEffectReverb.new()
 			reverb.room_size = 0.62
