@@ -1,9 +1,6 @@
 # BLACK SITE
 
-A short first-person psychological horror game about a facility that remembers you.
-
-**Play in your browser:** https://alviya-fatima.github.io/black-site/
-
+A psychological horror game about a facility that remembers you.
 You wake in Intake 03. The door is unlocked. The building is not empty. Find a way out, read what the staff left behind, and try not to come back.
 
 ## Controls
@@ -22,7 +19,7 @@ You wake in Intake 03. The door is unlocked. The building is not empty. Find a w
 - Documents, notes, keypads, fuses, and hidden routes
 - A very persistent bear
 
-                                                      -Built for HARVEST a Game JAM (by Hakclub)-
+                                                            -Built for HARVEST a Game JAM (by Hakclub)-
 DEVS- ALVIYA FATIMA, SURYA TEJ, ARNAV KUMAR SINGH
 
   
